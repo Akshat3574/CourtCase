@@ -1,29 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Page</title>
-  <link rel="stylesheet" href="../styles/login.css" />
+  <title>Register</title>
 </head>
 <body>
-  <h1 id="title"> Welcome to CourtCase</h1>
-  <div class="login-container">
-    <h2 title="login">Login</h2>
-    <form action="#" method="post">
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Username" required />
-      </div>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Password" required />
-      <label for="remember-me">
-            <h6 ><a href="forgotpassword.ejs">Forgot Password</a></h6>
-
-      </div>
-      <button type="submit">Login</button>
-    </form>
-  </div>
+  <h2>Register</h2>
+  <form method="POST" action="/register">
+    <input type="text" name="username" placeholder="Username" required /><br />
+    <input type="email" name="email" placeholder="Email" required /><br />
+    <input type="password" name="password" placeholder="Password" required /><br />
+    <button type="submit">Register</button>
+  </form>
 </body>
 </html>
